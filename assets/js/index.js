@@ -40,7 +40,7 @@ function login(){
         messageLogin.style.color   = 'red';
         inputUsername.style.border = '1px solid red';
         inputPassword.style.border = '1px solid red';
-        return
+        return;
     }
 
     if(userList.find(userList => userList.usuario === inputUsername.value) && userList.find(userList => userList.senha === inputPassword.value)){
