@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.modal-background {
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    z-index: 9999;
+}
+
+.modal-edit {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 500px;
+    width: 800px;
+}
+
+.modal h1 {
+    margin: 20px 0;
+}
+
+.card-register, .card-edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.input-area input {
+    border: none;
+    border: 1px solid grey;
+    border-radius: 8px;
+    outline: none;
+    padding: 8px;
+    width: 60%;
+}
+
+.buttons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.btnEdit {
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 8px;
+    text-transform: uppercase;
+    width: 80%;
+}
+
+.btnEdit:hover, input:focus {
+    box-shadow: 2px 2px 2px 2px #cccc;
+    outline: none;
+}
+
+.login, .saveEdit {
+    background-color: #4ab354;
+    color: #fff;
+}
+
+.register, .cancelEdit {
+    background-color: #fff;
+    border: 1px solid #4ab354;
+    color: #4ab354;
+}

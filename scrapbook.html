@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Recados</title>
+    <link rel="shortcut icon" href="./assets/img/agenda.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="stylesheet" href="./assets/css/scrapbook.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <p></p>
+            <button id="exit"><img src="./assets/img/logout.png"></button>
+        </header>
+        <div class="card-task">
+            <h1>Meus recados</h1>
+            <div class="inputs-area">
+                <div class="div-username">
+                    <input type="text" name="input-description"  id="input-description" placeholder="Descrição">
+                </div>
+                <div class="div-password">
+                    <input type="text" name="input-detailing"
+                    id="input-detailing" placeholder="Detalhamento">
+                </div>
+                <button id="save">Salvar</button>
+            </div>
+            <small id="message"></small>
+        </div>
+        <div class="tasks-list">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td class="title">#</td>
+                        <td class="title">Descrição</td>
+                        <td class="title">Detalhamento</td>
+                        <td class="cel-actions title">Ação</td>
+                    </tr>
+                </thead>
+                <tbody id="list">
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="modal-background">
+            <div class="modal-edit">
+                <h1 style="margin-top: 50px;">Edite sua tarefa</h1>
+                <div style="margin: 30px;" class="card-edit">
+                    <div class="input-area">
+                        <input type="text" placeholder="Descrição" id="description">
+                    </div>
+                    <div class="input-area">
+                        <input type="text" placeholder="Detalhamento" id="detailing">
+                    </div>
+                    <div style="margin: 30px;" class="buttons">
+                        <button class="saveEdit btnEdit">Salvar</button>
+                        <button class="calcelEdit btnEdit">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="./assets/js/scrapbook.js"></script>
+</body>
+</html>

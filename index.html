@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de login</title>
+    <link rel="shortcut icon" href="./assets/img/agenda.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+</head>
+<body>
+    <div class="left-side">
+
+    </div>
+    <div class="right-side">
+        <div class="card-login">
+            <legend>Entrar no sistema</legend>
+            <div class="inputs-area">
+                <input type="text" placeholder="Usuário" id="inputUsername">
+                <small id="messageLogin"></small>
+            </div>
+            <div class="inputs-area">
+                <input type="password" placeholder="Senha" id="inputPassword">
+                <small id="messagePassLogin"></small>
+            </div>
+            <button class="login" id="logIn">Entrar</button>
+            <button class="register" id="registerButton">Não tem login, faça seu cadastro</button>
+        </div>
+    </div>
+
+    <div class="modal-background" id="modal-background">
+        <div class="modal" id="modal">
+            <h1>Faça seu cadastro</h1>
+            <div class="card-register">
+                <div class="inputs-area">
+                    <input type="text" placeholder="Digite um usuário" id="userRegister">
+                    <small id="messageUser"></small>
+                </div>
+                <div class="inputs-area">
+                    <input type="password" placeholder="Digite a senha" id="passwordRegister">
+                    <small id="messagePass"></small>
+                </div>
+                <div class="inputs-area">
+                    <input type="password" placeholder="Confirme a senha" id="confirmPassword">
+                    <small id="messageConfirm"></small>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="register" id="registerModal">Cadastrar</button>
+                <button class="login" id="exitModal">Voltar para página de login</button>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/register.js"></script>
+</body>
+</html>
