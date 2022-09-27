@@ -14,7 +14,7 @@
     z-index: 9999;
 }
 
-.modal-edit {
+.modal-edit, .modal {
     background-color: #fff;
     display: flex;
     flex-direction: column;
