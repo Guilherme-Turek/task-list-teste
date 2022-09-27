@@ -35,7 +35,7 @@ function login(){
         inputPassword.style.border   = '1px solid grey';
     };
 
-    if(userList.find(userList => userList.usuario != inputUsername.value) || userList.find(userList => userList.senha !== inputPassword.value)){
+    if(!userList){
         messageLogin.textContent   = 'Usuário não encontrado, tente novamente!';
         messageLogin.style.color   = 'red';
         inputUsername.style.border = '1px solid red';
