@@ -35,6 +35,14 @@ function login(){
         inputPassword.style.border   = '1px solid grey';
     };
 
+    if(userList.find(userList => userList.usuario != inputUsername.value) || userList.find(userList => userList.senha !== inputPassword.value)){
+        messageLogin.textContent   = 'Usuário não encontrado, tente novamente!';
+        messageLogin.style.color   = 'red';
+        inputUsername.style.border = '1px solid red';
+        inputPassword.style.border = '1px solid red';
+        return
+    }
+
     if(userList.find(userList => userList.usuario === inputUsername.value) && userList.find(userList => userList.senha === inputPassword.value)){
         location.href                = './scrapbook.html';
         sessionStorage.setItem('user-logged', inputUsername.value);
@@ -44,12 +52,6 @@ function login(){
         inputPassword.style.border   = '1px solid grey';
         inputUsername.value          = '';
         inputPassword.value          = '';
-    } else {
-        messageLogin.textContent   = 'Usuário não encontrado, tente novamente!';
-        messageLogin.style.color   = 'red';
-        inputUsername.style.border = '1px solid red';
-        inputPassword.style.border = '1px solid red';
     };
-
 
 };

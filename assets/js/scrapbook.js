@@ -91,7 +91,7 @@ function editTask(id) {
     const modalIptDescription = document.querySelector('#description');
     const modalIptDetailing   = document.querySelector('#detailing');
 
-         modal.style.display = 'flex'
+        modal.style.display = 'flex'
 
         let findEdit = tasksArray.findIndex((task) => task.id === id);
     
