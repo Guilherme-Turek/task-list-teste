@@ -52,6 +52,12 @@ function login(){
         inputPassword.style.border   = '1px solid grey';
         inputUsername.value          = '';
         inputPassword.value          = '';
+        return
+    } else {
+        messageLogin.textContent   = 'Usuário não encontrado, tente novamente!';
+        messageLogin.style.color   = 'red';
+        inputUsername.style.border = '1px solid red';
+        inputPassword.style.border = '1px solid red';
     };
 
 };
