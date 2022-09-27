@@ -10,7 +10,12 @@ body {
 }
 
 .left-side {
-    background-color: antiquewhite;
+    display: flex;
+    height: 100vh;
+    width: 50vw;
+}
+
+.left-side img {
     display: flex;
     height: 100vh;
     width: 50vw;
